@@ -1,4 +1,16 @@
 
+
+@font-face {
+  font-family: "Bubble";
+  src:
+       url('./fonts/Frankfurt-Am6.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Bold";
+  src:
+       url('./fonts/SummerCentury-DYA91.otf');
+}
+
 body {
     display: flex;
     flex-direction: row;
@@ -12,6 +24,12 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+    font-family: "Info";
+    font-weight: lighter;
+}
+
+.page * {
+    z-index: 2;
 }
 
 p {
@@ -30,7 +48,9 @@ p {
     font-size: calc(min(0.95dvh / sqrt(2), 0.95dvw));
     height:  calc( 100em * sqrt(2) );
     width: 100em;
-    outline: 2px solid black;
+    outline: 2px solid rgb(0, 0, 0);
+    overflow: hidden;
+    background-color: rgb(178, 226, 243);
 }
 
 table, .contact {
@@ -39,32 +59,56 @@ table, .contact {
 
 .photos {
     position: absolute;
-    right: 15%;
-    top: 25%;
+    right: 10%;
+    top: 27%;
     width:30%;
+    background-color: rgb(228, 227, 227);
+    padding: 1em;
+    padding-right: 3em;
+    padding-top: 3em;
 }
+
+.photos img:nth-child(1) {
+    rotate: -1deg
+}
+
+.photos img:nth-child(2) {
+    rotate: 2deg
+}
+
+.photos img:nth-child(3) {
+    rotate: -1deg
+}
+
 
 
 .info {
     font-size: 3em;
     text-align: start;
-    height: 43%;
-    margin-right: 50%;
+    height: fit-content;
+    margin-right: 43%;
     width: 30%;
+    padding: 1em;
+    margin-bottom: 18%;
+    background-color: rgb(228, 217, 212);
 }
 
 .price {
-    margin-right: 50%;
+    margin-right: 45%;
     padding: 2em;
     border-radius: 2em;
     height: 20%;
+    margin-top: 0%;
 }
 
 .title {
     font-size: 8em;
-    height: 10%;
+    height: 20%;
     text-align: center;
     width: fit-content;
+    /* background-color: lightgoldenrodyellow; */
+    font-family: "bubble";
+      transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
 }
 
 .sub-title {
