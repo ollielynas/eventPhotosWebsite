@@ -18,7 +18,7 @@ body {
     justify-content: center;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -48,75 +48,11 @@ p {
     font-size: calc(min(0.95dvh / sqrt(2), 0.95dvw));
     height:  calc( 100em * sqrt(2) );
     width: 100em;
-    outline: 2px solid rgb(0, 0, 0);
+    /* outline: 2px solid rgb(0, 0, 0); */
     overflow: hidden;
     background-color: rgb(178, 226, 243);
 }
 
-table, .contact {
-    font-size: 3em;
-}
-
-.photos {
-    position: absolute;
-    right: 10%;
-    top: 27%;
-    width:30%;
-    background-color: rgb(228, 227, 227);
-    padding: 1em;
-    padding-right: 3em;
-    padding-top: 3em;
-}
-
-.photos img:nth-child(1) {
-    rotate: -1deg
-}
-
-.photos img:nth-child(2) {
-    rotate: 2deg
-}
-
-.photos img:nth-child(3) {
-    rotate: -1deg
-}
-
-
-
-.info {
-    font-size: 3em;
-    text-align: start;
-    height: fit-content;
-    margin-right: 43%;
-    width: 30%;
-    padding: 1em;
-    margin-bottom: 18%;
-    background-color: rgb(228, 217, 212);
-}
-
-.price {
-    margin-right: 45%;
-    padding: 2em;
-    border-radius: 2em;
-    height: 20%;
-    margin-top: 0%;
-}
-
-.title {
-    font-size: 8em;
-    height: 20%;
-    text-align: center;
-    width: fit-content;
-    /* background-color: lightgoldenrodyellow; */
-    font-family: "bubble";
-      transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
-}
-
-.sub-title {
-    font-weight: bold;
-    text-align: center;
-}
-
-img {
-    max-width:100%;
-    padding: 1em;
+.toolbarHorizontalGroup {
+    display: none;
 }
